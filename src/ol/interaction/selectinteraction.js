@@ -22,6 +22,7 @@ goog.require('ol.style.Style');
  */
 ol.interaction.SelectFilterFunction;
 
+
 /**
  * @enum {string}
  */
@@ -33,7 +34,6 @@ ol.SelectEventType = {
    */
   SELECT: 'select'
 };
-
 
 
 
@@ -203,7 +203,6 @@ ol.interaction.Select.handleEvent = function(mapBrowserEvent) {
   var /** @type {Array.<ol.Feature>} */ deselected = [];
   var /** @type {Array.<ol.Feature>} */ selected = [];
   var change = false;
-  var filter = this.filter_;
   if (set) {
     // Replace the currently selected feature(s) with the feature(s) at the
     // pixel, or clear the selected feature(s) if there is no feature at
