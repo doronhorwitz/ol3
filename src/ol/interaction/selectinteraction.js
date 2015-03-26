@@ -230,6 +230,7 @@ ol.interaction.Select.handleEvent = function(mapBrowserEvent) {
               deselected.push(feature);
             }
           }
+          return !this.multi_;
         }, undefined, this.layerFilter_);
     var i;
     for (i = deselected.length - 1; i >= 0; --i) {
